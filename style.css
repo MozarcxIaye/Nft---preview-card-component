@@ -185,6 +185,7 @@
     border-radius: 24px;
     padding: 2rem;
     width: 380px;
+    margin-top: 3rem;
     
     font-family: var(--ff-primary);
     box-shadow: 0 0.5rem 8px 1.75rem var(--clr-mainbg), 0 0 10px 3.5rem hsl(212, 53%, 12%);
