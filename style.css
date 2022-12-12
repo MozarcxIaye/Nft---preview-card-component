@@ -1,0 +1,297 @@
+@media all and (max-width: 450px) {
+  :root {
+    /* color  */
+    --clr-Softblue: hsl(215, 51%, 70%);
+    --clr-Cyan: hsl(178, 100%, 50%);
+    /* outer background  */
+    --clr-outerbg: hsl(217, 58%, 13%);
+    /* main background */
+    --clr-mainbg: hsl(215, 55%, 12%);
+    /* card background  */
+    --clr-cardbg: hsl(216, 50%, 16%);
+    /* line  */
+    --clr-line: hsl(215, 32%, 27%);
+    --clr-White: hsl(0, 0%, 100%);
+
+    /* font size  */
+    --fs-para: 1rem;
+
+    /* font family  */
+    --ff-primary: "Outfit", sans-serif;
+    /* font weight  */
+    --fw-reg: 300;
+    --fw-bold: 400;
+    --fw-semibold: 600;
+  }
+  * {
+    padding: none;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background: var(--clr-outerbg);
+    padding: 2rem;
+  }
+  .container {
+    background: var(--clr-cardbg);
+    border-radius: 24px;
+    padding: 2rem;
+    font-family: var(--ff-primary);
+    box-shadow: 0 0.5rem 8px 1.75rem var(--clr-mainbg);
+  }
+  .container > .imgContainer { 
+    position: relative; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+  }
+  .container > .imgContainer > img {
+    width: 100%;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+  .imgContainer:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(0, 255, 255, 0.5);
+  }
+  .container > .imgContainer > svg{
+    position: absolute;
+    transition: 0.5s;
+    opacity: 0;
+  }
+  
+  .imgContainer:hover svg{
+    opacity: 1;
+  }
+  .container > h1 {
+    color: var(--clr-White);
+    font-size: 1.5rem;
+    font-weight: var(--fw-semibold);
+    margin: 1.2rem 0 1.2rem 0;
+    cursor: pointer;
+  }
+  .container > h1:hover{
+    color: var(--clr-Cyan);
+    transition: 0.3s;
+  }
+  .container > p {
+    color: var(--clr-Softblue);
+    font-size: var(--fs-para);
+    line-height: 1.65rem;
+  }
+  .inner-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  .ethereum {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    color: var(--clr-Cyan);
+    font-weight: var(--fw-bold);
+  }
+  .time {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    color: var(--clr-Softblue);
+    font-weight: var(--fw-bold);
+  }
+  hr {
+    height: 1.75px;
+    background: var(--clr-line);
+    outline: none;
+    margin: 1rem 0 1rem 0;
+    border: none;
+  }
+  .container > span {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--clr-Softblue);
+  }
+  .container > span > p > a {
+    text-decoration: none;
+    color: white;
+  }
+  .container > span > p > a:hover {
+    color: var(--clr-Cyan);
+    transition: 0.3s;
+  }
+  .container > .credit > .avatar {
+    border: 1.5px solid white;
+    border-radius: 50%;
+    width: 2rem;
+  }
+  .attribution {
+    color: var(--clr-Softblue);
+    font-family: var(--ff-primary);
+    font-size: 0.8rem;
+    margin-top: 4rem;
+    text-align: center;
+  }
+  .attribution > a {
+    color: hsl(0, 100%, 74%);
+    text-decoration: none;
+  }
+}
+
+@media all and (max-width: 1560px) and (min-width: 450px) {
+  :root {
+    /* color  */
+    --clr-Softblue: hsl(215, 51%, 70%);
+    --clr-Cyan: hsl(178, 100%, 50%);
+    /* outer background  */
+    --clr-outerbg: hsl(217, 58%, 13%);
+    /* main background */
+    --clr-mainbg: hsl(215, 55%, 12%);
+    /* card background  */
+    --clr-cardbg: hsl(216, 50%, 16%);
+    /* line  */
+    --clr-line: hsl(215, 32%, 27%);
+    --clr-White: hsl(0, 0%, 100%);
+
+    /* font size  */
+    --fs-para: 1rem;
+
+    /* font family  */
+    --ff-primary: "Outfit", sans-serif;
+    /* font weight  */
+    --fw-reg: 300;
+    --fw-bold: 400;
+    --fw-semibold: 600;
+  }
+  * {
+    padding: none;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background: var(--clr-outerbg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .container {
+    background: var(--clr-cardbg);
+    border-radius: 24px;
+    padding: 2rem;
+    width: 380px;
+    
+    font-family: var(--ff-primary);
+    box-shadow: 0 0.5rem 8px 1.75rem var(--clr-mainbg), 0 0 10px 3.5rem hsl(212, 53%, 12%);
+  }
+  
+  .container > .imgContainer { 
+    position: relative; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+  }
+  .container > .imgContainer >  img {
+    width: 100%;
+    border-radius: 12px;
+    cursor: pointer;
+    
+  }
+  .imgContainer:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(0, 255, 255, 0.5);
+  }
+  .container > .imgContainer > svg{
+    position: absolute;
+    transition: 0.5s;
+    opacity: 0;
+  }
+  
+  .imgContainer:hover svg{
+    opacity: 1;
+  }
+  .container > h1 {
+    color: var(--clr-White);
+    font-size: 1.5rem;
+    font-weight: var(--fw-semibold);
+    margin: 1.2rem 0 1.2rem 0;
+    cursor: pointer;
+  }
+  .container > h1:hover{
+    color: var(--clr-Cyan);
+    transition: 0.3s;
+  }
+  .container > p {
+    color: var(--clr-Softblue);
+    font-size: var(--fs-para);
+    line-height: 1.65rem;
+  }
+  .inner-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  .ethereum {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    color: var(--clr-Cyan);
+    font-weight: var(--fw-bold);
+  }
+  .time {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    color: var(--clr-Softblue);
+    font-weight: var(--fw-bold);
+  }
+  hr {
+    height: 1.75px;
+    background: var(--clr-line);
+    outline: none;
+    margin: 1rem 0 1rem 0;
+    border: none;
+  }
+  .container > span {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--clr-Softblue);
+  }
+  .container > span > p > a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
+  .container > span > p > a:hover {
+    color: var(--clr-Cyan);
+    transition: 0.3s;
+  }
+  .container > .credit > .avatar {
+    border: 1.5px solid white;
+    border-radius: 50%;
+    width: 2rem;
+  }
+  .attribution {
+    color: var(--clr-Softblue);
+    font-family: var(--ff-primary);
+    font-size: 0.8rem;
+    margin-top: 4rem;
+    text-align: center;
+  }
+  .attribution > a {
+    color: hsl(0, 100%, 74%);
+    text-decoration: none;
+  }
+}
